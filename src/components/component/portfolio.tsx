@@ -103,6 +103,11 @@ export default function PortfolioCard() {
             </div>
 
             <div className="flex flex-col items-center">
+              <Image src="/go.svg" alt="Python" width="24" height="24" className="h-12 w-12 mb-2 text-[#3776ab]" />
+              <p className="text-lg font-medium">Go</p>
+            </div>
+
+            <div className="flex flex-col items-center">
               <Image src="/python.svg" alt="Python" width="24" height="24" className="h-12 w-12 mb-2 text-[#3776ab]" />
               <p className="text-lg font-medium">Python</p>
             </div>
@@ -224,12 +229,20 @@ export default function PortfolioCard() {
                 />
                 <h3 className="text-2xl font-bold mb-2 text-[#a7aef0]">SpeedSearch</h3>
                 <p className="text-lg leading-relaxed mb-4 line-clamp-5 text-center">SpeedSearch is a hybrid search engine web application designed to facilitate semantic search capabilities using Next.js. By implementing a highly efficient search engine powered by Postgres and utilizing Upstash as a scalable vector database, SpeedSearch stores and retrieves vector embeddings effectively. The application integrates Drizzle ORM for seamless interaction with the Postgres database, ensuring robust and type-safe queries. Additionally, OpenAI&apos;s vector embedding API is employed to transform and index textual data into high-dimensional vectors, enhancing the search functionality with AI-powered relevance and accuracy. This sophisticated setup ensures users experience fast and accurate search results. Visit speedsearch.ayush.dev for more details.</p>
-                <Link
-                  className="inline-flex items-center justify-center rounded-md bg-[#a7aef0] px-4 py-2 text-sm font-medium text-[#f5f5f5] shadow transition-colors hover:bg-[#8c94d6] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#a7aef0] disabled:pointer-events-none disabled:opacity-50"
-                  href="#"
-                >
-                  View Project
-                </Link>
+                <div className=" flex space-x-4">
+                  <Link
+                    className="inline-flex items-center justify-center rounded-md bg-[#a7aef0] px-4 py-2 text-sm font-medium text-[#f5f5f5] shadow transition-colors hover:bg-[#8c94d6] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#a7aef0] disabled:pointer-events-none disabled:opacity-50"
+                    href="https://github.com/maurya-ayush/search-engine"
+                    >
+                    Github
+                  </Link>
+                  <Link
+                    className="inline-flex items-center justify-center rounded-md bg-[#a7aef0] px-4 py-2 text-sm font-medium text-[#f5f5f5] shadow transition-colors hover:bg-[#8c94d6] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#a7aef0] disabled:pointer-events-none disabled:opacity-50"
+                    href="https://speedsearch-rho.vercel.app"
+                    >
+                    Live
+                  </Link>
+                </div>
               </CardContent>
             </Card>
             <Card>
@@ -247,12 +260,20 @@ export default function PortfolioCard() {
                 />
                 <h3 className="text-2xl font-bold mb-2 text-[#a7aef0]">FastAPI</h3>
                 <p className=" text-lg leading-relaxed mb-4 line-clamp-5 text-center">FastAPI is a high-performance, globally distributed API designed with Hono, a lightweight web framework aimed at minimal overhead and rapid response times. The API is deployed using serverless functions via Cloudflare Workers, ensuring low latency and high availability through global distribution. Redis is utilized as a fast, in-memory database for efficient data storage and caching, significantly improving data retrieval speeds and overall performance. Cloudflare Workers&apos; edge network capabilities are harnessed to deliver API responses swiftly and efficiently to users around the world. Explore the project at fastapi.ayush.dev.</p>
-                <Link
-                  className="inline-flex items-center justify-center rounded-md bg-[#a7aef0] px-4 py-2 text-sm font-medium text-[#f5f5f5] shadow transition-colors hover:bg-[#8c94d6] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#a7aef0] disabled:pointer-events-none disabled:opacity-50"
-                  href="#"
-                >
-                  View Project
-                </Link>
+                <div className=" flex space-x-4">
+                  <Link
+                    className="inline-flex items-center justify-center rounded-md bg-[#a7aef0] px-4 py-2 text-sm font-medium text-[#f5f5f5] shadow transition-colors hover:bg-[#8c94d6] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#a7aef0] disabled:pointer-events-none disabled:opacity-50"
+                    href="https://github.com/maurya-ayush/fastapi"
+                    >
+                    Github
+                  </Link>
+                  <Link
+                    className="inline-flex items-center justify-center rounded-md bg-[#a7aef0] px-4 py-2 text-sm font-medium text-[#f5f5f5] shadow transition-colors hover:bg-[#8c94d6] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#a7aef0] disabled:pointer-events-none disabled:opacity-50"
+                    href="https://fastapi-zeta.vercel.app"
+                    >
+                    Live
+                  </Link>
+                </div>
               </CardContent>
             </Card>
             <Card>
@@ -268,13 +289,13 @@ export default function PortfolioCard() {
                   }}
                   width={400}
                 />
-                <h3 className="text-2xl font-bold mb-2 text-[#a7aef0]">Full Stack Booking Software</h3>
+                <h3 className="text-2xl font-bold mb-2 text-[#a7aef0]">Booking Software</h3>
                 <p className="text-lg leading-relaxed mb-4 line-clamp-5 text-center">This full-stack booking software is crafted for restaurants, utilizing Next.js to provide a seamless and responsive user experience. Prisma ORM is integrated for robust database management and streamlined data operations, ensuring high performance and scalability. TailwindCSS is used to style the application, offering a modern and responsive design that enhances the user interface. The software also employs tRPC for end-to-end type safety and efficient API communication, eliminating the need for manual API client generation. Real-time booking updates and notifications are implemented to ensure smooth reservation management for both customers and restaurant staff. Check out book.ayush.dev for more information.</p>
                 <Link
                   className="inline-flex items-center justify-center rounded-md bg-[#a7aef0] px-4 py-2 text-sm font-medium text-[#f5f5f5] shadow transition-colors hover:bg-[#8c94d6] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#a7aef0] disabled:pointer-events-none disabled:opacity-50"
-                  href="#"
+                  href="https://github.com/maurya-ayush/booking-software"
                 >
-                  View Project
+                  Github
                 </Link>
               </CardContent>
             </Card>
@@ -295,9 +316,9 @@ export default function PortfolioCard() {
                 <p className="text-lg leading-relaxed mb-4 line-clamp-5 text-center">PhishEYES is a full-stack phishing prevention application in development, leveraging React.js to analyze websites and prevent attacks. The project integrates natural language processing (NLP) to analyze domain names and website DOM content for any suspicious activity, providing a probability score based on backend code and content similarity. A web crawler is being developed to monitor website content continuously. Additionally, a report download system is created to generate detailed website reports. OpenCV integration is also underway to analyze web screenshots against actual website appearances. This tool aims to offer comprehensive protection against phishing threats. More details can be found on the project&apos;s GitHub.</p>
                 <Link
                   className="inline-flex items-center justify-center rounded-md bg-[#a7aef0] px-4 py-2 text-sm font-medium text-[#f5f5f5] shadow transition-colors hover:bg-[#8c94d6] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#a7aef0] disabled:pointer-events-none disabled:opacity-50"
-                  href="#"
+                  href="https://github.com/maurya-ayush"
                 >
-                  View Project
+                  Github
                 </Link>
               </CardContent>
             </Card>
